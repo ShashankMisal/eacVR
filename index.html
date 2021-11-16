@@ -32,13 +32,13 @@
     <script src="./node_modules/videojs-vr/dist/videojs-vr.min.js"></script>
     <script src="./node_modules/video.js/dist/video.min.js"></script>
     <script>
-        var player = videojs('my-video');
-        // console.log(player);
-        player?.vr({projection: '360',motionControls:true});
+        // var player = videojs('my-video');
+        // // console.log(player);
+        // player?.vr({projection: '360',motionControls:true});
 
-        //  (function (window, videojs) {
-        //     window.vr_eac = videojs('my-video').vr({ projection: '360', motionControls: true });
-        //   }(window, window.videojs));
+         (function (window, videojs) {
+            window.vr_eac = videojs('my-video').vr({ projection: '360', motionControls: true });
+          }(window, window.videojs));
       
 
 
